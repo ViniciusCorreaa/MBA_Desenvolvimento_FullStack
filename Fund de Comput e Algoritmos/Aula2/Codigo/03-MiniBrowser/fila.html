@@ -1,0 +1,47 @@
+<script>
+    console.log('Fila/Queue')
+
+    //FIFO
+    var fila = [
+        'scripts.js',
+        'style.css',
+        'imagem.png',
+    ];
+
+    //Adiciona alguem a fila
+    fila.push('doguinho.png');
+
+    //Remove o primeiro da fila
+    fila.shift();
+
+    //==============================
+    //Receita para criar filas
+    //==============================
+    // -enqueue
+    // -dequeue
+    class Queue {
+        constructor() {
+            this.data = [];
+        }
+
+        print(){
+         console.log(this.data); 
+        }
+        enqueue(item){
+            this.data.push(item);
+        }
+        dequeue() {
+            this.data.shift();
+        }
+    }
+
+    var requests = new Queue();
+    requests.enqueue('scripts.js');
+    requests.print();
+    requests.dequeue();
+    requests.enqueue('style.css');
+    requests.enqueue('imagem.png');
+    requests.enqueue('doguinho.png');
+    requests.print();
+
+</script>
