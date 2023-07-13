@@ -1,4 +1,4 @@
-FROM node:16.15.1
+FROM node:16.13.2
 WORKDIR /app
 COPY package*.json ./
 RUN npm install

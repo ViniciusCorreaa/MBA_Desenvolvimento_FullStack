@@ -1,0 +1,11 @@
+FROM ubuntu 
+RUN apt update
+RUN apt install net-tools --yes
+RUN apt install vim --yes
+RUN apt install curl --yes
+
+#Para instalações com controle de versionamento, é interessante executar sempre alguns comandos
+# ou seja, não utilizar o Cash
+# Para isso o comando deve ser modificado, conforme abaixo
+
+# RUN apt update && apt install net-tools --yes && apt install vim --yes && apt install curl --yes
