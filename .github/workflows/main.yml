@@ -32,7 +32,7 @@ jobs:
       uses: docker/build-push-action@v4.1.1
       with:
         context: "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src"
-        file: "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src/DockerFile"
+        file: "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src/Dockerfile"
         push: true
         tags: |
           vinicorreaa/aula-conversao-temperatura:v1
