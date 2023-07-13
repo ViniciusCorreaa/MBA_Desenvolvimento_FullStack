@@ -22,3 +22,6 @@ jobs:
         cd "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src"
         npm install -g mocha
         npm install
+        
+    - name: Execução do teste
+      run: mocha "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src/test/convert.js"
