@@ -9,16 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v3.1.0
+      with:
+        node-version: 16.13.2
+    
     - name: Checkout repository
       uses: actions/checkout@v2.5.0
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v3.0.0
-      with:
-        node-version: 16.13.2
-        
     - name: Instalação do Mocha e dos pacotes para teste
       run: |
-        cd ./src
+        cd src
         npm install -g mocha
         npm install
