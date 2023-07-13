@@ -43,7 +43,7 @@ jobs:
         file: "DevOps Basico/Aula2/Codigo/aula-conversao-temperatura/src/Dockerfile"
         push: true
         tags: |
-          vinicorreaa/aula-conversao-temperatura:v1
+          vinicorreaa/aula-conversao-temperatura:${{github.run_number}}
           vinicorreaa/aula-conversao-temperatura:latest
         
         
